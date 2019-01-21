@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>day1</title>
+</head>
+<body>
+	<h1>js能做的事</h1>
+	<p id="demo">js改变html内容测试</p>
+	<ol>
+		<li>JavaScript：直接写入 HTML 输出流</li>
+		<script>
+			document.write("<h1>这是一个标题</h1>");
+			document.write("<p>这是一个段落。</p>");
+		</script>
+		<li>JavaScript：对事件的反应</li>
+			<button type="button" onclick="alert('欢迎!')">点我!</button>
+		<li>JavaScript：改变 HTML 内容</li>
+		<script>
+			x=document.getElementById("demo");  //查找元素
+			x.innerHTML="Hello JavaScript";    //改变内容
+		</script>
+		<li>JavaScript：改变 HTML 图像</li>
+		<li>JavaScript：改变 HTML 样式</li>
+		<script>
+			x=document.getElementById("demo")  //找到元素 
+			x.style.color="blue";           //改变样式</script>
+	</ol>
+	<br>
+	<p>事件测试</p>
+	<button onclick="myFunction()">点我</button>
+
+	<script>
+		function myFunction() {
+   		document.write(Date());
+	}
+	</script>
+
+</body>
+</html>
